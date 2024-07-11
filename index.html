@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="eu">
+    <head>
+        <meta charset="utf-8">
+        <title>TPHTMLCSS05 TABLEAUX</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <table>
+            <caption>Site pour les jeux vidéos</caption>
+            <tr>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>Adresse</th>
+            </tr>
+            <tr>
+                <td>Jeux vidéos.com</td>
+                <td>Site d'informations sur l'actualité du jeu vidéo</td>
+                <td><a href="https://www.jeuxvideo.com/">https://www.jeuxvideo.com/</a></td>
+            </tr>
+            <tr>
+                <td>Steam</td>
+                <td>Plateforme de distribution de jeux vidéos</td>
+                <td><a href="https://www.store.steampowered.com/">https://www.store.steampowered.com</a></td>
+            </tr>
+            <tr>
+                <td>Ubisoft</td>
+                <td>Plateforme de distribution de jeux vidéos et développeur français</td>
+                <td><a href="https://www.ubisoft.com/">https://www.ubisoft.com</a></td>
+            </tr>
+            <tr>
+                <td>Romstation</td>
+                <td>Plateforme pour l'émulation de jeux vidéos rétro</td>
+                <td><a href="https://www.romstation.fr">https://www.romstation.fr</a></td>
+            </tr>
+        </table>
+        <table>
+            <caption>Films Ghibli à voir !</caption>
+            <thead>
+                <tr>
+                    <th>Réalisateur</th>
+                    <th>Nom</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Hayao Miyazaki</td>
+                    <td>Porco Rosso</td>
+                    <td>1992</td>
+                </tr>
+                <tr>
+                    <td>Princesse Monosuke</td>
+                    <td>1997</td>
+                </tr>
+                <tr>
+                    <td>Le Voyage de Chihiro</td>
+                    <td>2002</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Isao Takahata</td>
+                    <td>Le tombeau des lucioles</td>
+                    <td>1988</td>
+                </tr>
+                <tr>
+                    <td>Le Conte de la princesse Kaguya</td>
+                    <td>2013</td>
+                </tr>
+            </tbody>
+        </table>
+        <form method="get" class="formulaire">
+            <fieldset>
+                <legend>Informations personnelles</legend>
+                <label for="Prenom">Prénom</label>
+                <input type="text" name="Prenom" placeholder="Ex: Dimitri" id="Prenom" maxlength="20" minlength="2" required><br>
+                <label for="Nom">Nom</label>
+                <input type="text" name="Nom" placeholder="Ex: Dupond" id="Nom" maxlength="20" minlength="2" required><br>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Ex: DDupond@gmail.com" id="email" required><br>
+                <label for="numéro">Numéro</label>
+                <input type="tel" name="numero" placeholder="Numéro de téléphone" id="numéro" required><br>
+                <label for="MotdePasse">Mot de passe</label>
+                <input type="password" name="Motdepasse" placeholder="Ex: Mot de passe" id="MotdePasse" required><br>
+                <label for="Age">Age</label>
+                <input type="number" name="Age" placeholder="Ex: 25" id="Age"><br>
+                <label for="Commentaire">Laissez un commentaire</label><br>
+                <textarea placeholder="Commentez-ici" name="Commentaire" id="Commentaire" cols="70" rows="10"></textarea><br>
+                <label for="date">Date de mon commentaire</label>
+                <input type="datetime-local" name="date" id="date" placeholder="Date"><br>
+                <label for="fichier">Ma Photo</label>
+                <input type="file" name="fichier" id="fichier" accept=".png, .gif, .jpg"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Vous préférez :</legend>
+                <label for="checkbox01">Le HTML</label>
+                <input type="checkbox" id="checkbox01"><br>
+                <label for="checkbox02">Le CSS</label>
+                <input type="checkbox" id="checkbox02"><br>
+                <label for="checkbox03">Le JavaScript</label>
+                <input type="checkbox" id="checkbox03"><br>
+                <label for="checkbox04">Ne rien faire</label>
+                <input type="checkbox" id="checkbox04"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Vous vous levez :</legend>
+                <input type="radio" id="radio1" name="radio" value="radio1" checked><label for="radio1">Le matin</label><br>
+                <input type="radio" id="radio2" name="radio" value="radio2"><label for="radio2">Le midi</label><br>
+                <input type="radio" id="radio3" name="radio" value="radio3"><label for="radio3">Le soir</label><br>
+                <input type="radio" id="radio4" name="radio" value="radio4"><label for="radio4">En retard</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Fin du formulaire</legend>
+                <label for="liste">Vous en avez assez?</label>
+                <select name="liste" id="liste">
+                    <optgroup label="Team Pas Encore">
+                        <option value="option1">J'en veux plus</option>
+                        <option value="option2">C'est super</option>
+                    </optgroup>
+                    <optgroup label="Team Oula">
+                        <option value="option3">J'en ait marre</option>
+                        <option value="option4">Pitié !</option>
+                    </optgroup>
+                </select><br>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </body>
+</html>

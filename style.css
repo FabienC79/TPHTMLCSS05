@@ -1,0 +1,33 @@
+table{
+    border-style: solid;
+    border-color: rgb(255, 0, 255);
+    border-width: 0.2em;
+    border-collapse: collapse;
+
+}
+
+td, th{
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+}
+
+th{
+    background-color: aqua;
+}
+
+caption{
+    color: rgb(255, 0, 255);
+}
+
+fieldset{
+    border-style: groove;
+    border-color: fuchsia;
+    border-width: 1em;
+}
+
+legend{
+    color: fuchsia;
+    width: max-content;
+    text-transform: uppercase;
+}
